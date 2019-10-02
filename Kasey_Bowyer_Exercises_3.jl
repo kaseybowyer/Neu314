@@ -39,6 +39,8 @@ function extract_RBG(filename)
     green = zeros(Float64, size(image,1), size(image,2))
     blue = zeros(Float64, size(image,1), size(image,2))
 
+    println("BUG BUG BUG")
+    
     for i = 1:size(image,1)
         for j = 1:size(image,2)
             global red[i,j] = image[i,j,1]
